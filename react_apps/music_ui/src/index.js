@@ -3,10 +3,23 @@ import React from "react";
 import  ReactDOM from 'react-dom';
 
 /* jsx - javascript extension */
-ReactDOM.render(<h2>Alright, Lets start!</h2>, document.getElementById('root'));
+//ReactDOM.render(kya dikhana hai, kaha dikhana hai)
 
+//This is more handy
+ReactDOM.render(
+    <div>
+        <h2> Alright, Lets start! </h2>
+        <p> Hello, Vins Striker! </p>
+        <h3> Multiple tag in wrpped tag </h3>
+    </div>,
+    document.getElementById('root')
+);
 
-/*javascript*/
-var h1 = document.createElement('h1');
-h1.innerHTML = 'Vins Striker';
-document.getElementById('root').appendChild(h1);
+ReactDOM.render(
+    [
+        <h2> Hello </h2>,
+        <p> Vins </p>,
+        <h3> Pandey </h3>
+    ],
+    document.getElementById('root')
+);
