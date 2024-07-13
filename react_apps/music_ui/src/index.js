@@ -4,22 +4,29 @@ import  ReactDOM from 'react-dom';
 
 /* jsx - javascript extension */
 //ReactDOM.render(kya dikhana hai, kaha dikhana hai)
-
-ReactDOM.render(
-    <React.Fragment>
-        <h2> Alright, Lets start! </h2>
-        <p> Hello, Vins Striker! </p>
-        <h3> Multiple tag in wrpped tag </h3>
-    </React.Fragment>,
-    document.getElementById('root')
-);
-
 // React.Fragment> --> syntactic sugar --> <>
 ReactDOM.render(
     <>
-        <h2> Alright, Lets start! </h2>
-        <p> Hello, Vins Striker! </p>
-        <h3> Multiple tag in wrpped tag </h3>
+        <h1> Welome to PrimeVideos App picklist</h1>
+        <p>  Below are  top 5 web series from PrimeVideos </p>
+        <ol>
+            <li>
+                Family Man
+            </li>
+            <li>
+                Mirzapur
+            </li>
+            <li>
+                Hostel Days
+            </li>
+            <li>
+                Bomby diary
+            </li>
+            <li>
+                Rakshak
+            </li>
+        </ol>
+       
     </>,
     document.getElementById('root')
 );
