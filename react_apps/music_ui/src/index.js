@@ -5,19 +5,23 @@ import  ReactDOM from 'react-dom';
 /* jsx - javascript extension */
 //ReactDOM.render(kya dikhana hai, kaha dikhana hai)
 // React.Fragment> --> syntactic sugar --> <>
-const first_name = 'Vinay';
-const last_name = 'Pandey'
+const firstName = 'Vinay';
+const lastName = 'Pandey';
+const todayDate = new Date().toLocaleDateString();
+const currentTime =  new Date().toLocaleTimeString();
 ReactDOM.render(
     <>
         <h2> Alright, Lets start! </h2>
         <p> Hello, Vins Striker! </p>
         <h3> Multiple tag in wrpped tag </h3>
-        <i> My name  is  {first_name} {last_name}</i>
+        <i> My name  is  {firstName} {lastName}</i>
         <br/>
-        <b> {first_name + " " +last_name}</b>
+        <b> {firstName + " " +lastName}</b>
         <br/>
-        <p>  {`Here come bactick template literals ${first_name} ${last_name}` }</p>
+        <p>  {`Here come bactick template literals ${firstName} ${lastName}` }</p>
         <p> My luck number is {4+3}, {Math.random()}</p>
+        <p>Today date is: {todayDate}</p>
+        <p>Current time is: {currentTime}</p>
     </>,
     document.getElementById('root')
 );
